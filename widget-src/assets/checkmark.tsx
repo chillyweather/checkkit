@@ -1,4 +1,3 @@
-//@ts-nocheck
 const empty = `<svg
     width="28"
     height="28"
