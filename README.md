@@ -1,36 +1,7 @@
-Below are the steps to get your widget running. You can also find instructions at:
+# CheckKit
 
-https://www.figma.com/widget-docs/setup-guide/
+A flexible, configurable checklist widget for Figma built with modern TypeScript architecture. CheckKit allows you to create dynamic checklists from any data source with clean, modular components and automatic date tracking.
 
-This widget template uses TypeScript and NPM, two standard tools in creating JavaScript applications.
+The widget features three checkbox states (empty, partial, complete) with smooth gray monochrome styling and rounded square design. Every checkbox interaction automatically updates the "last modified" date, providing instant feedback without requiring forms or user input. The modular architecture supports custom themes, multiple data formats, and easy integration into any Figma workflow.
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
-
-https://nodejs.org/en/download/
-
-Next, install TypeScript, esbuild and the latest type definitions by running:
-
-npm install
-
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
-
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
-
-For more information, visit https://www.typescriptlang.org/
-
-Using TypeScript requires a compiler to convert TypeScript (widget-src/code.tsx) into JavaScript (dist/code.js)
-for the browser to run. We use esbuild to do this for us.
-
-We recommend writing TypeScript code using Visual Studio code:
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-   then select "npm: watch". You will have to do this again every time
-   you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+Built with a universal configuration system, CheckKit can consume data from JSON, plain text, string arrays, or existing checklist objects. Simply provide a title and list of items, and the widget handles the rest - making it perfect for QA checklists, design reviews, project tasks, or any workflow that needs trackable progress indicators.
