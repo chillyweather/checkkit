@@ -1,6 +1,3 @@
-// Legacy file - now uses refactored components
-// This maintains backward compatibility while using the new architecture
-
 const { widget } = figma;
 
 import { ChecklistWidget } from "./components/ChecklistWidget";
@@ -19,3 +16,8 @@ function PropertyMenuWidget() {
 }
 
 widget.register(PropertyMenuWidget);
+
+// Export everything for external use
+export { ChecklistWidget } from "./components/ChecklistWidget";
+export { createChecklistConfig, configAdapters } from "./utils/configFactory";
+export * from "./types/index";

@@ -2,7 +2,9 @@
 *.log
 *.log.*
 node_modules
+REFACTORING.md
 
 out/
 dist/
 code.js
+.vscode/settings.json
